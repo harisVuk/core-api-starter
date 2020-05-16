@@ -15,7 +15,7 @@ namespace Demo.Api.Utils
                new Claim(JwtRegisteredClaimNames.Sub, user.Id)
             };
 
-            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("secret word"));
+            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("keep trying my friend"));
             var signingCredentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256);
 
             var jwt = new JwtSecurityToken(signingCredentials: signingCredentials, claims: claims);

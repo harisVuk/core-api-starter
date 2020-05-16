@@ -42,6 +42,7 @@ namespace Demo.Api
                 .AllowAnyMethod()
                 .AllowAnyHeader();
             }));
+            services.AddControllers();
 
             services.AddTransient<INewsRepository, NewsRepository>();
             services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<DemoContext>();
@@ -50,7 +51,7 @@ namespace Demo.Api
                 options.UseSqlServer(Configuration.GetConnectionString("DemoDb"));
             });
             services.AddMvc(options => options.EnableEndpointRouting = false);
-            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("secret word"));
+            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("keep trying my friend"));
 
             services.AddAuthentication(options =>
             {
@@ -70,7 +71,6 @@ namespace Demo.Api
                 };
             });
 
-            services.AddControllers();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -79,11 +79,11 @@ namespace Demo.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseRouting();
 
             app.UseCors("Cors");
 
-            app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

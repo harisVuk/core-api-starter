@@ -1,12 +1,14 @@
 using Demo.Core.IRepository;
 using Demo.Data.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
 namespace Demo.Api.Controllers
 {
-    [Route("/[controller]")]
+    [Authorize]
     [ApiController]
+    [Route("/[controller]")]
     public class NewsController : ControllerBase
     {
         private INewsRepository newsRepository;

@@ -54,7 +54,7 @@ namespace Demo.Api.Controllers
             TokenVM tokenVM = new TokenVM()
             {
                 token = TokenUtility.CreateToken(user),
-                expires_at = DateTimeOffset.UtcNow.AddMinutes(2).ToUnixTimeMilliseconds()
+                expires_at = DateTimeOffset.UtcNow.AddMinutes(20).ToUnixTimeMilliseconds()
             };
 
             return Ok(tokenVM);
