@@ -1,0 +1,11 @@
+C:\Users\Haris\Desktop\Portofolio\Core\Demo.Core\bin\Debug\netcoreapp3.1\Demo.Core.deps.json
+C:\Users\Haris\Desktop\Portofolio\Core\Demo.Core\bin\Debug\netcoreapp3.1\Demo.Core.dll
+C:\Users\Haris\Desktop\Portofolio\Core\Demo.Core\bin\Debug\netcoreapp3.1\Demo.Core.pdb
+C:\Users\Haris\Desktop\Portofolio\Core\Demo.Core\bin\Debug\netcoreapp3.1\Demo.Data.dll
+C:\Users\Haris\Desktop\Portofolio\Core\Demo.Core\bin\Debug\netcoreapp3.1\Demo.Data.pdb
+C:\Users\Haris\Desktop\Portofolio\Core\Demo.Core\obj\Debug\netcoreapp3.1\Demo.Core.csprojAssemblyReference.cache
+C:\Users\Haris\Desktop\Portofolio\Core\Demo.Core\obj\Debug\netcoreapp3.1\Demo.Core.AssemblyInfoInputs.cache
+C:\Users\Haris\Desktop\Portofolio\Core\Demo.Core\obj\Debug\netcoreapp3.1\Demo.Core.AssemblyInfo.cs
+C:\Users\Haris\Desktop\Portofolio\Core\Demo.Core\obj\Debug\netcoreapp3.1\Demo.Core.csproj.CopyComplete
+C:\Users\Haris\Desktop\Portofolio\Core\Demo.Core\obj\Debug\netcoreapp3.1\Demo.Core.dll
+C:\Users\Haris\Desktop\Portofolio\Core\Demo.Core\obj\Debug\netcoreapp3.1\Demo.Core.pdb
