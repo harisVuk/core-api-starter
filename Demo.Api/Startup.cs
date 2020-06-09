@@ -20,6 +20,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 
 namespace Demo.Api
 {
@@ -71,6 +72,40 @@ namespace Demo.Api
                 };
             });
 
+            services.AddSwaggerGen(setupAction =>
+            {
+                setupAction.SwaggerDoc("DemoOpenApi",
+                    new Microsoft.OpenApi.Models.OpenApiInfo()
+                    {
+                        Title = "Demo Api",
+                        Version = "1",
+                        Description = "Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5YjM0NzllZC1iNzg0LTQyNmQtOTc5MS04OTJkOThhNzQ1MDAifQ.cowkVFCJ7am8vfp12THQYkAOxn3_wROs6EOwDBACwoI"
+                    });
+
+                setupAction.AddSecurityDefinition("bearerAuth", new OpenApiSecurityScheme()
+                {
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT"
+                });
+
+
+                setupAction.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "bearerAuth"
+                            }
+                        }, new List<string>()
+                    }
+                });
+
+            });
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -85,6 +120,13 @@ namespace Demo.Api
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(setupAction =>
+            {
+                setupAction.SwaggerEndpoint("/swagger/DemoOpenApi/swagger.json", "Demo Api");
+                setupAction.RoutePrefix = "";
+            });
 
             app.UseEndpoints(endpoints =>
             {

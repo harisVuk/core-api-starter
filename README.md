@@ -8,6 +8,7 @@
   <li><strong>ASP.NET Identity Core</strong></li>
   <li><strong>JWT (Bearer Token)</strong> Based Authentication</li>
   <li><strong>Dependency injection</strong></li>
+  <li>Description api with <strong>Swagger</strong></li>
   <li>Usage of <strong>MSSQL</strong> as database</li>
   <li><strong>Repository Pattern</strong></li>
 </ul>

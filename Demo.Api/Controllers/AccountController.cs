@@ -3,11 +3,13 @@ using System.Threading.Tasks;
 using Demo.Api.Utils;
 using Demo.Api.VM;
 using Demo.Data.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Demo.Api.Controllers
 {
+    [Authorize]
     [Route("/[controller]")]
     [ApiController]
     public class AccountController : ControllerBase
@@ -23,9 +25,10 @@ namespace Demo.Api.Controllers
         }
 
         [HttpPost("signup")]
+        [AllowAnonymous]
         public async Task<IActionResult> SignUp([FromBody] RegisterVM register)
         {
-            var user = new User {
+            var user = new User() {
                 FirstName = register.FirstName,
                 LastName = register.LastName,
                 UserName = register.Email,
@@ -40,8 +43,8 @@ namespace Demo.Api.Controllers
             return Ok(true);
         }
 
-
         [HttpPost("signin")]
+        [AllowAnonymous]
         public async Task<IActionResult> SignIn([FromBody] CredentialsVM credentials)
         {
             var result = await signInManager.PasswordSignInAsync(credentials.Email, credentials.Password, false, false);

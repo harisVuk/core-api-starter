@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Haris\\Desktop\\Portofolio\\Core\\Demo.Core\\Demo.Core.csproj": {}
+    "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Core\\Demo.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Haris\\Desktop\\Portofolio\\Core\\Demo.Core\\Demo.Core.csproj": {
+    "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Core\\Demo.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Haris\\Desktop\\Portofolio\\Core\\Demo.Core\\Demo.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Core\\Demo.Core.csproj",
         "projectName": "Demo.Core",
-        "projectPath": "C:\\Users\\Haris\\Desktop\\Portofolio\\Core\\Demo.Core\\Demo.Core.csproj",
+        "projectPath": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Core\\Demo.Core.csproj",
         "packagesPath": "C:\\Users\\Haris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Haris\\Desktop\\Portofolio\\Core\\Demo.Core\\obj\\",
+        "outputPath": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Haris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -30,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Haris\\Desktop\\Portofolio\\Core\\Demo.Data\\Demo.Data.csproj": {
-                "projectPath": "C:\\Users\\Haris\\Desktop\\Portofolio\\Core\\Demo.Data\\Demo.Data.csproj"
+              "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Data\\Demo.Data.csproj": {
+                "projectPath": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Data\\Demo.Data.csproj"
               }
             }
           }
@@ -60,27 +57,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Haris\\Desktop\\Portofolio\\Core\\Demo.Data\\Demo.Data.csproj": {
+    "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Data\\Demo.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Haris\\Desktop\\Portofolio\\Core\\Demo.Data\\Demo.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Data\\Demo.Data.csproj",
         "projectName": "Demo.Data",
-        "projectPath": "C:\\Users\\Haris\\Desktop\\Portofolio\\Core\\Demo.Data\\Demo.Data.csproj",
+        "projectPath": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Data\\Demo.Data.csproj",
         "packagesPath": "C:\\Users\\Haris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Haris\\Desktop\\Portofolio\\Core\\Demo.Data\\obj\\",
+        "outputPath": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Haris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -135,12 +135,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
