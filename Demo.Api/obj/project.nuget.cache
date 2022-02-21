@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QpIYe41nd7ysp49RwrA/LJfxKIHc3HzBvlem8ZyJ3Pswxe+KumEFmu3Bw3yTk2hFZtPSo3m4YdQ9wDHDLYfbBw==",
+  "dgSpecHash": "2+g5eTeczGsrbuAcIjwQO1/qJkHvHjHXC9ZJpLr0EzFDAGNSpTjQ94ryaTye9cIee/AUljE4dGYQZ9KLQ37SpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Api\\Demo.Api.csproj",
+  "projectFilePath": "C:\\Users\\Haris\\Desktop\\git\\core-api-starter\\Demo.Api\\Demo.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Haris\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Haris\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -139,7 +139,7 @@
     "C:\\Users\\Haris\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Haris\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Haris\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Haris\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\Haris\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
   ],
   "logs": []
 }

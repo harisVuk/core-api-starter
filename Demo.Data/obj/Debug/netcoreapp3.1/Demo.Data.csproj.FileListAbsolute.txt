@@ -19,3 +19,15 @@ C:\Users\Haris\Desktop\projects\git-projects\core-api-starter\Demo.Data\obj\Debu
 C:\Users\Haris\Desktop\projects\git-projects\core-api-starter\Demo.Data\obj\Debug\netcoreapp3.1\Demo.Data.dll
 C:\Users\Haris\Desktop\projects\git-projects\core-api-starter\Demo.Data\obj\Debug\netcoreapp3.1\Demo.Data.pdb
 C:\Users\Haris\Desktop\projects\git-projects\core-api-starter\Demo.Data\obj\Debug\netcoreapp3.1\Demo.Data.genruntimeconfig.cache
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\bin\Debug\netcoreapp3.1\Demo.Data.deps.json
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\bin\Debug\netcoreapp3.1\Demo.Data.runtimeconfig.json
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\bin\Debug\netcoreapp3.1\Demo.Data.runtimeconfig.dev.json
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\bin\Debug\netcoreapp3.1\Demo.Data.dll
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\bin\Debug\netcoreapp3.1\Demo.Data.pdb
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\obj\Debug\netcoreapp3.1\Demo.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\obj\Debug\netcoreapp3.1\Demo.Data.AssemblyInfoInputs.cache
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\obj\Debug\netcoreapp3.1\Demo.Data.AssemblyInfo.cs
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\obj\Debug\netcoreapp3.1\Demo.Data.csproj.CoreCompileInputs.cache
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\obj\Debug\netcoreapp3.1\Demo.Data.dll
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\obj\Debug\netcoreapp3.1\Demo.Data.pdb
+C:\Users\Haris\Desktop\git\core-api-starter\Demo.Data\obj\Debug\netcoreapp3.1\Demo.Data.genruntimeconfig.cache

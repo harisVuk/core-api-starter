@@ -13,16 +13,17 @@ namespace Demo.Api.Controllers
     [Route("/[controller]")]
     public class NewsController : ControllerBase
     {
-        private INewsRepository newsRepository;
-        public NewsController(INewsRepository _newsRepository)
+        private INewsRepository _newsRepository;
+        public NewsController(INewsRepository newsRepository)
         {
-            newsRepository = _newsRepository;
+            _newsRepository = newsRepository;
         }
 
         [HttpGet]
+        [Route("all")]
         public ActionResult Index()
         {
-            IEnumerable<News> news = newsRepository.GetAll();
+            IEnumerable<News> news = _newsRepository.GetAll();
 
             return Ok(news);
         }

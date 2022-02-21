@@ -14,17 +14,18 @@ namespace Demo.Api.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        readonly UserManager<User> userManager;
-        readonly SignInManager<User> signInManager;
+        private UserManager<User> _userManager;
+        private SignInManager<User> _signInManager;
 
         public AccountController(UserManager<User> userManager,
                                 SignInManager<User> signInManager)
         {
-            this.userManager = userManager;
-            this.signInManager = signInManager;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
 
-        [HttpPost("signup")]
+        [HttpPost]
+        [Route("signup")]
         [AllowAnonymous]
         public async Task<IActionResult> SignUp([FromBody] RegisterVM register)
         {
@@ -35,7 +36,7 @@ namespace Demo.Api.Controllers
                 Email = register.Email
             };
 
-            var result = await userManager.CreateAsync(user, register.Password);
+            var result = await _userManager.CreateAsync(user, register.Password);
 
             if (!result.Succeeded)
                 return BadRequest(new ApiError { Message = "Registration failed."});
@@ -43,16 +44,20 @@ namespace Demo.Api.Controllers
             return Ok(true);
         }
 
-        [HttpPost("signin")]
+        [HttpPost]
+        [Route("signin")]
         [AllowAnonymous]
         public async Task<IActionResult> SignIn([FromBody] CredentialsVM credentials)
         {
-            var result = await signInManager.PasswordSignInAsync(credentials.Email, credentials.Password, false, false);
+            var result = await _signInManager.PasswordSignInAsync(credentials.Email, credentials.Password, false, false);
 
             if (!result.Succeeded)
                 return BadRequest(new ApiError { Message = "Login failed." });
 
-            var user = await userManager.FindByEmailAsync(credentials.Email);
+            var user = await _userManager.FindByEmailAsync(credentials.Email);
+
+            if(user == null)
+                return BadRequest(new ApiError { Message = "Email not found." });
 
             TokenVM tokenVM = new TokenVM()
             {

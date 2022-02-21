@@ -6779,11 +6779,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Api\\Demo.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Haris\\Desktop\\git\\core-api-starter\\Demo.Api\\Demo.Api.csproj",
       "projectName": "Demo.Api",
-      "projectPath": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Api\\Demo.Api.csproj",
+      "projectPath": "C:\\Users\\Haris\\Desktop\\git\\core-api-starter\\Demo.Api\\Demo.Api.csproj",
       "packagesPath": "C:\\Users\\Haris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Api\\obj\\",
+      "outputPath": "C:\\Users\\Haris\\Desktop\\git\\core-api-starter\\Demo.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Haris\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6798,12 +6798,13 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Core\\Demo.Core.csproj": {
-              "projectPath": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Core\\Demo.Core.csproj"
+            "C:\\Users\\Haris\\Desktop\\git\\core-api-starter\\Demo.Core\\Demo.Core.csproj": {
+              "projectPath": "C:\\Users\\Haris\\Desktop\\git\\core-api-starter\\Demo.Core\\Demo.Core.csproj"
             },
-            "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Data\\Demo.Data.csproj": {
-              "projectPath": "C:\\Users\\Haris\\Desktop\\projects\\git-projects\\core-api-starter\\Demo.Data\\Demo.Data.csproj"
+            "C:\\Users\\Haris\\Desktop\\git\\core-api-starter\\Demo.Data\\Demo.Data.csproj": {
+              "projectPath": "C:\\Users\\Haris\\Desktop\\git\\core-api-starter\\Demo.Data\\Demo.Data.csproj"
             }
           }
         }
@@ -6816,6 +6817,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -6856,8 +6858,8 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.21, 3.1.21]"
           }
         ],
         "frameworkReferences": {
@@ -6868,7 +6870,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
